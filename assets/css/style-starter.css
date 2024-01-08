@@ -7047,7 +7047,9 @@ fieldset:disabled .btn {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030
+    z-index: 1030;
+	background-color: var(--bg-color);
+	height: 70px;
 }
 
 .fixed-bottom {
@@ -17986,7 +17988,7 @@ h6 {
 p {
     margin: 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;	/*18px*/
     line-height: 28px;
     color: var(--font-color);
     font-family: 'Sarabun', sans-serif;
@@ -18099,10 +18101,10 @@ p.white {
 
 .title-w3l,
 .title-w3l.two {
-    font-size: 40px;
+    font-size: 36px;		/*40px*/
     line-height: 50px;
     font-weight: 700;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
 }
 
 .title-w3l span.thin {
@@ -18259,7 +18261,7 @@ a.read:hover span.fas {
     display: block;
     box-sizing: border-box;
     border-radius: 50%;
-    color: #fff;
+    color: var(--heading-color);
 }
 
 .nav-fixed .gg-moon,
@@ -18267,7 +18269,7 @@ a.read:hover span.fas {
     display: block;
     box-sizing: border-box;
     border-radius: 50%;
-    color: #fff;
+    color: var(--heading-color);
 }
 
 .gg-moon:after {
@@ -18341,7 +18343,7 @@ header {
 header.nav-fixed {
     padding: 0;
     background-color: var(--bg-color);
-    height: 80px;
+    height: 70px;
     border-bottom: none;
     box-shadow: 0 25px 98px 0 rgb(7 6 8 / 7%);
     z-index: 10 !important;
@@ -18373,12 +18375,12 @@ span.sub-color {
 }
 
 .navbar .navbar-brand img {
-    max-width: 70px;
+    max-width: 60px;	/*70px*/
     transition: all 0.5s ease;
 }
 
 .navbar-nav .nav-item {
-    padding: 0 12px;
+    padding: 0 15px;
     transition: all 0.5s ease;
     position: relative;
 }
@@ -18406,9 +18408,9 @@ nav ul li a:before {
     padding: 10px 0 10px;
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+	color: var(--heading-color);
     position: relative;
-    opacity: .9;
+    opacity: .8;
     text-transform: capitalize;
 }
 
@@ -18648,7 +18650,12 @@ a.dropdown-item.active {
     nav.navbar.navbar-expand-lg.navbar-light {
         padding: 0;
     }
-
+	.navbar a.contact{
+		display: none;
+	}
+	.mobile-show{
+		display: block !important;
+	}
     .navbar-collapse {
         max-height: calc(100vh - 80px);
         overflow-y: scroll;
@@ -18833,7 +18840,7 @@ a.dropdown-item.active {
     position: relative;
     display: grid;
     align-items: center;
-    min-height: 740px;
+    min-height: 640px;	/*740px*/
     background-size: cover;
 }
 
@@ -18871,7 +18878,7 @@ a.dropdown-item.active {
 }
 
 .w3l-main-slider h3.title-hero-19 {
-    font-size: 66px;
+    font-size: 54px;	/*66px*/
     line-height: 76px;
     color: #ffffff;
     font-weight: 700;
@@ -19224,7 +19231,7 @@ p.w3ban-para {
 }
 
 .product-incfhny h4 a {
-    font-size: 20px;
+    font-size: 18px;	/*20px*/
     line-height: 26px;
     font-weight: 700;
     display: block;
@@ -20347,7 +20354,7 @@ display: grid;
 .w3l-index-about ul.w3l-right-book li {
     margin-bottom: 10px;
     color: var(--heading-color);
-    font-size: 18px;
+    font-size: 16px;	/*18px*/
     list-style: inside;
     font-weight: 600;
     list-style-type: none;
@@ -21675,5 +21682,45 @@ display:none;
 }
 .form-inner-cont .alert-success,.form-inner-cont .alert-danger{
 display:none;
+}
+.navbar a.contact {
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #fe4648;
+    background: #fe4648;
+	transition: 0.3s ease-in; 
+}
+.navbar a.contact:hover {
+    color: #fe4648;
+	background: #ffffff;
+}
+.mobile-show {
+    display: none;
+}
+h3.subtitle-w3l{
+    font-size: 1.75rem;
+    line-height: 35px;
+    font-weight: 700;
+    display: block;
+    color: var(--heading-color);
+    text-align: left;
+}
+h4.title-w3l{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    display: block;
+    color: var(--heading-color);
+    text-align: left;
+}
+.product-incfhny p {
+    font-size: 14px;
+    line-height: 22px;
+}
+span.red-text {
+    font-weight: 700;
+    color: #fe4648;
 }
 /*# sourceMappingURL=style-freedom.css.map */
