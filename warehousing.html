@@ -11,6 +11,41 @@
 		<!-- Template CSS -->
 		<link rel="stylesheet" href="assets/css/style-starter.css">
 		<link rel="stylesheet" href="assets/flaticon/font/flaticon.css">
+		<style>
+		.gallery img{
+			cursor: pointer;
+		}
+		#lightbox {
+			background: rgba(0,0,0,0.8);
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: none;
+			justify-content: center;
+			align-items: center;
+			color: #fff;
+			z-index: 9999;
+		}
+		#lightbox img{
+			width: 70%;
+		}
+		#lightbox .close, #lightbox .prev, #lightbox .next {
+			position: absolute;
+			cursor: pointer;
+		}
+		#lightbox .close {
+			right: 10px;
+			top: 10px;
+		}
+		#lightbox .prev {
+			left: 10px;
+		}
+		#lightbox .next {
+			right: 10px;
+		}
+		</style>
 	</head>
 
 	<body>
@@ -26,19 +61,19 @@
 						<span class="navbar-toggler-icon fa icon-close fa-times"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarScroll">
-						<ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+						<ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+								<a class="nav-link" aria-current="page" href="index.html">Home</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="about.html">About</a>
 							</li>
 							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+								<a class="nav-link dropdown-toggle active" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
 								<ul class="dropdown-menu dropdown-menu-2" aria-labelledby="navbarScrollingDropdown">
 									<li><a class="dropdown-item pt-2" href="freightforwarding.html">Freight Forwarding</a></li>
 									<li><a class="dropdown-item" href="transportation.html">Transportation</a></li>
-									<li><a class="dropdown-item" href="warehousing.html">Warehousing</a></li>
+									<li><a class="dropdown-item active" href="warehousing.html">Warehousing</a></li>
 									<li><a class="dropdown-item" href="breakbulkandprojectcargo.html">Break Bulk and Project Cargo</a>
 									</li>
 									<li><a class="dropdown-item" href="isotanksandflexitanks.html">ISO Tanks and Flexi Tanks</a>
@@ -51,11 +86,12 @@
 							<li class="nav-item">
 								<a class="nav-link" href="network.html">Network</a>
 							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="contact.html">Contact</a>
+							<li class="nav-item mobile-show">
+								<a class="nav-link" href="network.html">Contact</a>
 							</li>
 						</ul>
 					</div>
+					<a class="btn contact ml-auto mr-1" href="contact.html">Contact</a>
 					<!-- toggle switch for light and dark theme -->
 					<div class="mobile-position mx-xl-4 mx-lg-3">
 						<nav class="navigation">
@@ -77,7 +113,7 @@
 		<!--//Header-->
 		<!--/inner-page-->
 		<div class="inner-banner py-5">
-			<section class="w3l-breadcrumb text-left py-sm-5 ">
+			<section class="w3l-breadcrumb text-left pt-3 ">
 				<div class="container">
 					<div class="w3breadcrumb-gids">
 						<div class="w3breadcrumb-left text-left">
@@ -97,15 +133,44 @@
 		</div>
 		<!--//inner-page-->
 		<!--/w3l-index3-->
-		<section class="w3l-index-about py-5" id="about2">
-			<div class="container py-md-5 py-2">
+		<section class="w3l-index-about py-5">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 pe-lg-5">
-						<p class="mt-4">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare tempus aliquet. Pellentesque finibus, est et iaculis suscipit, dolor nulla commodo dui, nec ultricies arcu nisl tristique eros. Morbi eros est, pulvinar eget ornare ac, ultrices eget risus. Ut lobortis pellentesque pretium. Praesent sollicitudin vestibulum iaculis. Mauris a finibus orci. Quisque ipsum nunc, efficitur sit amet blandit ut, aliquam quis dui. Phasellus interdum leo eu ipsum malesuada, et interdum diam egestas. Maecenas pretium fermentum tortor ac tincidunt. Curabitur consectetur dolor libero, at aliquam est ornare eleifend. Aliquam at finibus dolor.”</p>
+						<p>Warehousing plays a pivotal role in the logistics ecosystem, serving as the cornerstone for the storage, management, and distribution of goods. It's the hub where products are housed, organized, and prepared for their onward journey to consumers.</p>
+						<p class="mt-4">Warehouses are more than just storage spaces; they're dynamic facilities designed to efficiently handle various aspects of the supply chain:<p>
+						<p class="mt-2"><span class="red-text">Storage and Inventory Management:</span> Our warehouses provide secure storage for goods of all types and sizes, ensuring they are protected from damage and theft. We also oversee inventory levels to meet demand and prevent overstocking or shortages.<p>
+						<p class="mt-2"><span class="red-text">Order Fulfillment:</span> Our warehouses are key in fulfilling orders promptly. We pick, pack, and dispatch products as per customer requirements, ensuring timely delivery.<p>
+						<p class="mt-2"><span class="red-text">Logistics Operations:</span> Our warehouses facilitate the smooth flow of goods, coordinating transportation, handling, and distribution to optimize the movement of products.</p>
+
+						<h4 class="title-w3l mt-4">Our Key Features of Warehousing Services:</h4>
+						<p class="mt-3"><span class="red-text">Indoor and Outdoor Storage:</span> Our facilities offer both indoor and outdoor storage options. Indoor spaces maintain controlled environments suitable for sensitive or fragile goods, while outdoor areas accommodate larger or specialized items.<p>
+						<p class="mt-2"><span class="red-text">Optimized Space Utilization:</span> Amity Warehouses are designed to maximize space efficiency, employing various storage systems and technologies to accommodate diverse inventory needs.<p>
+						<p class="mt-2"><span class="red-text">Security Measures:</span> We employ robust security measures, including surveillance, access controls, and inventory tracking, to safeguard stored goods.<p>
+						<p class="mt-2"><span class="red-text">Technology Integration:</span> Our warehouses leverage technology like inventory management systems, RFID (Radio Frequency Identification), and automation to streamline operations and enhance accuracy.<p>
+						
+						<p class="mt-4">Partnering with Amity ensures efficient storage and management of inventory, reducing operational costs, and improving order accuracy and speed. It allows businesses to focus on their core activities while entrusting warehousing responsibilities to our experts.</p>
+					</div>
+				</div>
+
+				<div class="row mt-4 gallery">
+					<div class="col-lg-3"></div>
+					<div class="col-lg-3 mt-2">
+						<img class="img-fluid" src="assets/images/amity10.jpg">
+					</div>
+					<div class="col-lg-3 mt-2">
+						<img class="img-fluid" src="assets/images/amity12.jpg">
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- Lightbox -->
+		<div id="lightbox">
+			<div class="close">x</div>
+			<!--<div class="prev">&lt;</div>
+			<div class="next">&gt;</div>-->
+			<img src="#">
+		</div>
 		<!--//w3l-index3-->
 		<!--/footer-9-->
 		<footer class="w3l-footer9">
@@ -252,6 +317,49 @@
 				$(window).on("resize", function() {
 					if ($(window).width() > 991) {
 						$("header").removeClass("active");
+					}
+				});
+			});
+			
+			$(function(){
+				// Lightbox function
+				var lightbox = function(){
+					var src = $('.galleryactive').attr('src');
+					$('#lightbox img').attr('src', src);
+				}
+
+				// Image is clicked
+				$('img').click(function(){
+					$('#lightbox').css('display','flex');
+					$(this).addClass('galleryactive');
+					lightbox();
+				});
+
+				// Close button clicked
+				$('.close').click(function(){
+					$('img').removeClass('galleryactive');
+					$('#lightbox').hide();
+				});
+
+				// Next button clicked
+				$('.next').click(function(){
+					if( $('.galleryactive').parent('.gallery').children('img:last').hasClass('galleryactive') ) {
+						$('.galleryactive').removeClass().parent('.gallery').children('img:first').addClass('galleryactive');
+						lightbox();
+					} else {
+						$('.galleryactive').removeClass().next('img').addClass('galleryactive');
+						lightbox();
+					}
+				});
+				
+				// Prev button clicked
+				$('.prev').click(function(){
+					if( $('.galleryactive').parent('.gallery').children('img:first').hasClass('galleryactive') ) {
+						$('.galleryactive').removeClass().parent('.gallery').children('img:last').addClass('galleryactive');
+						lightbox();
+					} else {
+						$('.galleryactive').removeClass().prev('img').addClass('galleryactive');
+						lightbox();
 					}
 				});
 			});
