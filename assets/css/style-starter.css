@@ -7049,7 +7049,7 @@ fieldset:disabled .btn {
     left: 0;
     z-index: 1030;
 	background-color: var(--bg-color);
-	height: 70px;
+	height: 100px;	/*70px*/
 }
 
 .fixed-bottom {
@@ -18375,7 +18375,7 @@ span.sub-color {
 }
 
 .navbar .navbar-brand img {
-    max-width: 60px;	/*70px*/
+    max-width: 90px;	/*70px/60px*/
     transition: all 0.5s ease;
 }
 
@@ -21722,5 +21722,71 @@ h4.title-w3l{
 span.red-text {
     font-weight: 700;
     color: #fe4648;
+}
+
+
+.service-details__content-text3-single {
+    position: relative;
+    display: block;
+    background: var(--bg-color);
+    border-radius: 5px;
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+    padding: 42px 30px 40px;
+    margin-bottom: 20px;
+}
+.service-details__content-text3-single::before {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 1px;
+    height: 40px;
+    background: #fd4648;
+    content: "";
+}
+.service-details__content-text3-single .inner {
+    position: relative;
+    display: block;
+    padding-left: 70px;
+}
+.service-details__content-text3-single .inner .icon {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+.service-details__content-text3-single .inner .icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: var(--primary-color);
+    line-height: 40px;
+    transition-delay: 0.1s;
+    transition: all 500ms ease;
+}
+.service-details__content-text3-single .inner .content-box {
+    position: relative;
+    display: block;
+}
+.service-details__content-text3-single .inner .content-box h3 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.service-details__content-text3-single .inner .content-box h3 a {
+    color: var(--heading-color);
+}
+.service-details__content-text3-single .inner .content-box p {
+    margin: 0;
+    color: var(--heading-color);
+}
+.service-details__content-text3-single:hover .inner .icon span {
+    transform: rotateY(180deg);
+    transition-delay: 0.1s;
+}
+.nav-fixed .navbar .navbar-brand img {
+    max-width: 60px;
+}
+.w3breadcrumb-gids h2.inner-w3-title{
+margin-top: 4rem !important;
 }
 /*# sourceMappingURL=style-freedom.css.map */
